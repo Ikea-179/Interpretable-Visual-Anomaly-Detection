@@ -1,0 +1,121 @@
+2022-09-27 13:13:12.918879: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+cuda available
+For class 3
+For class 3
+/data/yijiarui/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Epoch [1/50] loss: 0.782 val_loss: 0.688
+Epoch [2/50] loss: 0.644 val_loss: 0.823
+Epoch [3/50] loss: 0.477 val_loss: 0.840
+Epoch [4/50] loss: 0.462 val_loss: 0.837
+Epoch [5/50] loss: 0.456 val_loss: 0.844
+Epoch [6/50] loss: 0.453 val_loss: 0.814
+Epoch [7/50] loss: 0.448 val_loss: 0.837
+Epoch [8/50] loss: 0.444 val_loss: 0.826
+Epoch [9/50] loss: 0.437 val_loss: 0.816
+Epoch [10/50] loss: 0.439 val_loss: 0.810
+Epoch [11/50] loss: 0.437 val_loss: 0.812
+Epoch [12/50] loss: 0.438 val_loss: 0.811
+Epoch [13/50] loss: 0.436 val_loss: 0.809
+Epoch [14/50] loss: 0.436 val_loss: 0.801
+Epoch [15/50] loss: 0.437 val_loss: 0.816
+Epoch [16/50] loss: 0.436 val_loss: 0.798
+Epoch [17/50] loss: 0.437 val_loss: 0.806
+Epoch [18/50] loss: 0.435 val_loss: 0.802
+Epoch [19/50] loss: 0.442 val_loss: 0.836
+Epoch [20/50] loss: 0.441 val_loss: 0.810
+Epoch [21/50] loss: 0.436 val_loss: 0.817
+Epoch [22/50] loss: 0.435 val_loss: 0.826
+Epoch [23/50] loss: 0.435 val_loss: 0.799
+Epoch [24/50] loss: 0.434 val_loss: 0.811
+Epoch [25/50] loss: 0.434 val_loss: 0.806
+Epoch [26/50] loss: 0.435 val_loss: 0.810
+Epoch [27/50] loss: 0.435 val_loss: 0.808
+Epoch [28/50] loss: 0.436 val_loss: 0.810
+Epoch [29/50] loss: 0.435 val_loss: 0.796
+Epoch [30/50] loss: 0.435 val_loss: 0.821
+Epoch [31/50] loss: 0.435 val_loss: 0.795
+Epoch [32/50] loss: 0.435 val_loss: 0.802
+Epoch [33/50] loss: 0.436 val_loss: 0.815
+Epoch [34/50] loss: 0.434 val_loss: 0.804
+Epoch [35/50] loss: 0.435 val_loss: 0.813
+Epoch [36/50] loss: 0.436 val_loss: 0.796
+Epoch [37/50] loss: 0.437 val_loss: 0.803
+Epoch [38/50] loss: 0.434 val_loss: 0.813
+Epoch [39/50] loss: 0.435 val_loss: 0.805
+Epoch [40/50] loss: 0.437 val_loss: 0.808
+Epoch [41/50] loss: 0.439 val_loss: 0.802
+Epoch [42/50] loss: 0.441 val_loss: 0.816
+Epoch [43/50] loss: 0.438 val_loss: 0.816
+Epoch [44/50] loss: 0.435 val_loss: 0.791
+Epoch [45/50] loss: 0.436 val_loss: 0.811
+Epoch [46/50] loss: 0.442 val_loss: 0.816
+Epoch [47/50] loss: 0.436 val_loss: 0.811
+Epoch [48/50] loss: 0.434 val_loss: 0.805
+Epoch [49/50] loss: 0.435 val_loss: 0.804
+Epoch [50/50] loss: 0.434 val_loss: 0.811
+free(): invalid next size (fast)
+2022-09-27 13:46:19.057290: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+cuda available
+For class 3
+For class 3
+/data/yijiarui/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py:117: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  input = module(input)
+Traceback (most recent call last):
+  File "/data/yijia/code2/code/train_fmnist.py", line 292, in <module>
+    main()
+  File "/data/yijia/code2/code/train_fmnist.py", line 258, in main
+    test_loss = test(epoch, model, test_loader,args,mu_mean, args.ssim) 
+  File "/data/yijia/code2/code/train_fmnist.py", line 127, in test
+    recon_batch, x = gcam.forward(data)
+  File "/data/yijia/code2/code/gradcam.py", line 41, in forward
+    self.preds = self.model(x)
+  File "/data/yijiarui/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/data/yijia/code2/code/model.py", line 321, in forward
+    enc = self.encoder(x)
+  File "/data/yijiarui/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/data/yijiarui/anaconda3/lib/python3.9/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/data/yijiarui/anaconda3/lib/python3.9/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/data/yijiarui/anaconda3/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 423, in forward
+    return self._conv_forward(input, self.weight)
+  File "/data/yijiarui/anaconda3/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 419, in _conv_forward
+    return F.conv2d(input, weight, self.bias, self.stride,
+RuntimeError: Given groups=1, weight of size [4, 1, 5, 5], expected input[128, 3, 28, 28] to have 1 channels, but got 3 channels instead
+For class 03
+1000
+For class 03
+--- nu :  0.1  ---
+PR AUC :  0.4020608612899147
+ROC_AUC :  0.6960975609756098
+--- nu :  0.2  ---
+PR AUC :  0.3910089074415409
+ROC_AUC :  0.6833536585365855
+--- nu :  0.3  ---
+PR AUC :  0.38426879458980073
+ROC_AUC :  0.6660975609756097
+--- nu :  0.4  ---
+PR AUC :  0.37840403428383335
+ROC_AUC :  0.6559146341463417
+--- nu :  0.5  ---
+PR AUC :  0.3754872998958478
+ROC_AUC :  0.647987804878049
+--- nu :  0.6  ---
+PR AUC :  0.3724863018444346
+ROC_AUC :  0.6417073170731706
+--- nu :  0.7  ---
+PR AUC :  0.36831299470941975
+ROC_AUC :  0.635609756097561
+--- nu :  0.8  ---
+PR AUC :  0.36572334172834664
+ROC_AUC :  0.6294512195121953
+--- nu :  0.9  ---
+PR AUC :  0.36201565677870656
+ROC_AUC :  0.6235365853658535
+***************
+PR_AUC MAX :  0.4020608612899147
+ROC_AUC MAX :  0.6960975609756098
+ROC_MAX_NU :  0.1
